@@ -15,7 +15,7 @@ public class SpringDataApplication implements CommandLineRunner {
 
 	private CargoService cargoService;
 	private Scanner scanner ;
-	private Boolean finalizarApp = Boolean.FALSE;
+	private Boolean finalizarApp = Boolean.TRUE;
 	
 	
 	public SpringDataApplication(CargoService cargoService) {
@@ -63,8 +63,11 @@ public class SpringDataApplication implements CommandLineRunner {
 				cargoService.listarCargos();
 				break;
 
-				
 			case "X":
+				finalizarApp = Boolean.TRUE;
+				break;
+				
+			case "x":
 				finalizarApp = Boolean.TRUE;
 				break;
 
