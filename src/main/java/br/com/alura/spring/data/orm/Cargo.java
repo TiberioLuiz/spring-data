@@ -22,20 +22,23 @@ public class Cargo {
 	
 	@OneToMany(mappedBy = "cargo")
 	private List<Funcionario> funcionarios = new ArrayList<Funcionario>();
-	
-	
+		
 	public Long getId() {
 		return id;
 	}
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public String getDescricao() {
 		return descricao;
 	}
+	
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 	public String getEndereco() {
 		return endereco;
 	}
